@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~font-awesome/css/font-awesome.css';
+
+body {
+    Font-family: Open Sans;
+    Font-weight: 300;
+    background: linear-gradient(to right, #f857a6, #ff5858);
+    justify-content: center;
+    display: flex;
+}
+.wrapper{
+    display: flex;
+    width: 800px;
+    background-color: white;
+    border: #bbb;
+    border-width: 1px;
+    border-radius: 10px;
+    border-style: solid;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+   
+}
+.container{
+    padding: 20px;
+    width: 100%;
+
+    
+}

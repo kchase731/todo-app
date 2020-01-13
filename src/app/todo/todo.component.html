@@ -1,0 +1,25 @@
+<div>
+  <input type="text" placeholder="Search..." />
+
+  <ol>
+    <li *ngFor="let todos of todos; let i = index;">
+      <div class="todoItemButton">
+        <button class="button-complete" (click)="status(todos)">
+          {{ todos.completed ? "Completed" : "Mark Complete" }}
+        </button>
+      </div>
+      <div class="todoItem">
+        <span [ngClass]="{ complete: todos.completed }">{{ todos.todo }}</span>
+      </div>
+      <div class="closeButtonContainer">
+        <button class="closebutton" >
+          <i class="fa fa-close" style="font-size:16px;color: #bbb" (click)="removeToDo(i)"></i>
+        </button>
+      </div>
+    </li>
+  </ol>
+  <div class="form">
+    <input type="text" [(ngModel)]="todo.todo" />
+    <button class="submit" (click)="addTodo()">Add</button>
+  </div>
+</div>
